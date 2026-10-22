@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ai.pleos.coach'
+    compileSdk 36
+    useLibrary 'android.car'
+
+    defaultConfig {
+        applicationId "ai.pleos.coach"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    signingConfigs {
+        release {
+            def props = new Properties()
+            def f = rootProject.file('keystore.properties')
+            if (f.exists()) {
+                f.withInputStream { props.load(it) }
+                storeFile rootProject.file(props['storeFile'])
+                storePassword props['storePassword']
+                keyAlias props['keyAlias']
+                keyPassword props['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    implementation 'ai.pleos.playground:Vehicle:2.3.2'
+    implementation 'ai.pleos.playground:TextToSpeech:3.3.1'
+    implementation 'ai.pleos.playground:FusedLocation:1.1.3'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.24'
+
+    testImplementation 'junit:junit:4.13.2'
+}
