@@ -230,3 +230,17 @@ CORNER #2 peakSteer=45 entry=30.0 kph steerIdx=21.20 conc=NaN delay=NaN labels=�
 - 권한 초기화를 try/catch 밖에 두기 — 모든 SDK 초기화가 신호별 개별 try/catch
 - `drivingstate` 서비스로 UX 제한 조회 — 안 함 (`uxrestriction` 사용)
 - `getInstantaneousEvEfficiency` — 안 씀 (`grep` 0건)
+
+---
+
+## 9. 제출물 링크
+
+| 항목 | 위치 |
+|---|---|
+| 소스 | 이 저장소 |
+| APK (release 서명) | `apk/김수빈_코너노트_release.apk` |
+| 시연 영상 (75초) | `video/cornernote_demo.mp4` |
+| 숏폼 (세로 9:16, 58초) | `video/cornernote_short_9x16.mp4` |
+
+모두 저장소 안에 있으므로 저장소 주소만으로 접근할 수 있습니다.
+Release 탭에도 같은 파일이 첨부되어 있습니다.
