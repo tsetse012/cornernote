@@ -18,3 +18,4 @@ analysis/*.png
 keystore.jks
 keystore.properties
 *.jks
+.omc/*
