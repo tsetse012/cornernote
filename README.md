@@ -238,7 +238,7 @@ CORNER #2 peakSteer=45 entry=30.0 kph steerIdx=21.20 conc=NaN delay=NaN labels=�
 | 항목 | 위치 |
 |---|---|
 | 소스 | 이 저장소 |
-| APK (release 서명) | `apk/김수빈_코너노트_release.apk` |
+| APK (release 서명) | `apk/` 폴더 (공고 규칙 파일명) |
 | 시연 영상 (75초) | `video/cornernote_demo.mp4` |
 | 숏폼 (세로 9:16, 58초) | `video/cornernote_short_9x16.mp4` |
 
