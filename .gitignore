@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# 빌드 산출물 (APK는 apk/ 폴더에 별도)
+app/build/
+
+# 로컬 분석 산출물
+analysis/*.png
+
+# 서명 키 — 절대 커밋 금지
+keystore.jks
+keystore.properties
+*.jks
